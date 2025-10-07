@@ -1,0 +1,113 @@
+.contact {
+  position: relative;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/public/contact-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 50px 0;
+  color: white; 
+  height: 60vh;
+}
+
+.contact .content {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 120px;
+}
+
+.summary {
+  margin-top: 100px;
+}
+
+.summary h1 {
+  text-align: center;
+  color: tomato;
+  padding-bottom: 20px;
+}
+
+.summary h3 {
+  text-align: center;
+  font-style: italic;
+  padding-bottom: 10px;
+}
+
+.summary p {
+  color: gray;
+  font-size: 24px;
+}
+
+.summary p span {
+  color: tomato;
+}
+
+.form .captcha {
+  text-align: center; 
+  margin-top: 30px;
+}
+
+#cf-turnstile {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.verify {
+  color: green;
+  margin-top: 20px;
+}
+
+.verify-error {
+  color: red;
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  margin-top: 20px;
+  background: #999; 
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: not-allowed; 
+}
+form{
+  text-align: center;
+  box-shadow: 0 0 10px black;
+  width: 800px;
+  margin: 10px auto;
+  padding: 20px;
+}
+.info{
+ margin-top: 40px;
+ color: gray;
+ 
+}
+.info div{
+  margin: 30px 0px;
+
+}
+.info div input{
+  width: 100%;
+  padding: 10px 20px;
+  color: gray;
+  outline: none;
+  border: none;
+  border: 1px solid gray;
+}
+.info textarea{
+  width: 100%;
+  color: gray;
+  outline: none;
+  border: none;
+  border: 1px solid gray;
+
+}
+.sub-btn{
+  padding: 10px 30px;
+  outline: none;
+  cursor: pointer;
+  border: none;
+}
+.sub-btn:hover{
+background-color: tomato;
+color: white;
+}

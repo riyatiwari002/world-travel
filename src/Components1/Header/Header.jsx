@@ -3,6 +3,7 @@ import Logo from "../../assets/Logo_2.webp";
 import { IoIosSearch } from "react-icons/io";
 import { useRef, useState } from "react";
 import { IoMdClose } from "react-icons/io";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [activeMenu, setActiveMenu] = useState(null);
@@ -40,8 +41,8 @@ const Header = () => {
         <div className="nav">
           
           <ul>
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">BLOG</a></li>
+            <li><Link to="/">HOME</Link></li>
+            <li><Link to="/blog">BLOG</Link></li>
 
             <li
               className="dropdown"
@@ -66,7 +67,7 @@ const Header = () => {
               onMouseEnter={() => toggleMenu("gallery")}
               onMouseLeave={() => toggleMenu(null)}
             >
-              <a href="#">Gallery</a>
+              <Link to="/gallery">Gallery</Link>
               {activeMenu === "gallery" && (
                 <div className="dropdown-menu">
                   <a href="#">IMAGE GALLERY</a>
@@ -76,7 +77,7 @@ const Header = () => {
             </li>
 
             <li><a href="#">ABOUT</a></li>
-            <li><a href="#">CONTACT</a></li>
+            <li><Link to="/contact">CONTACT</Link></li>
           </ul>
         </div>
 
